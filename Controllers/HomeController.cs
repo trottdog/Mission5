@@ -6,19 +6,17 @@ namespace MyHobby.Controllers;
 
 public class HomeController : Controller
 {
+    // Change this to whatever you want to charge per hour
+    private const decimal HourlyRate = 45m;
+
     public IActionResult Index()
     {
         return View();
     }
 
-    public IActionResult Privacy()
+    public IActionResult Calculator()
     {
+        ViewBag.HourlyRate = HourlyRate;
         return View();
-    }
-
-    [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-    public IActionResult Error()
-    {
-        return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
 }
