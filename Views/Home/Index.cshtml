@@ -1,8 +1,63 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Home";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="row align-items-center mb-4">
+    <div class="col-lg-7">
+        <h1 class="display-5 fw-bold">Motorcycles are my hobby</h1>
+        <p class="lead">
+            Riding is the perfect mix of focus and freedom. It forces you to be present, to read the road,
+            to anticipate what’s ahead, and to stay calm when things move fast.
+        </p>
+        <p>
+            I like the progression of it. There’s always something to refine, smoother lines, better braking,
+            cleaner shifts, smarter positioning, and better awareness. It’s not just speed. It’s discipline.
+        </p>
+        <p>
+            I also love the community. Riders look out for each other, share routes, and talk through gear,
+            maintenance, and technique. It’s a hobby that keeps you learning.
+        </p>
+
+        <a class="btn btn-primary btn-lg" asp-controller="Home" asp-action="Calculator">
+            Estimate tutoring cost
+        </a>
+    </div>
+
+    <div class="col-lg-5">
+        <div class="card shadow-sm">
+            <img src="~/moto-wheelie.jpg" class="card-img-top" alt="Motorcycle riding photo">
+            <div class="card-body">
+                <small class="text-muted">One of my favorite riding shots.</small>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row g-4">
+    <div class="col-md-6">
+        <div class="card shadow-sm h-100">
+            <img src="~/moto-ride.jpg" class="card-img-top" alt="Riding with a friend">
+            <div class="card-body">
+                <h5 class="card-title">What I enjoy most</h5>
+                <p class="card-text">
+                    Scenic rides, good weather, and that feeling of momentum. I also enjoy learning about bikes,
+                    how they work, and how small changes in technique can make a big difference.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="card shadow-sm h-100">
+            <div class="card-body">
+                <h5 class="card-title">What I can help tutor</h5>
+                <ul class="mb-0">
+                    <li>Beginner fundamentals (controls, balance, smooth inputs)</li>
+                    <li>Cornering basics and positioning</li>
+                    <li>Safety and awareness strategies</li>
+                    <li>Basic maintenance concepts (chain, tires, oil, checks)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </div>
